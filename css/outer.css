@@ -1,0 +1,16 @@
+.Outer {
+  padding: 1vw;
+  background-color: var(--color-gray);
+}
+
+.Outer.header {
+  background-color: var(--color-black);
+}
+
+.Outer.jumbotron {
+  background-color: var(--color-pink);
+}
+
+.Outer.footer {
+  background-color: var(--color-black);
+}

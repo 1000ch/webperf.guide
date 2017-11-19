@@ -1,0 +1,8 @@
+.Outline {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.Outline ol {
+  padding-left: 2em;
+}

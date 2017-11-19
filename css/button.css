@@ -1,0 +1,8 @@
+.Button {
+  display: inline-block;
+  padding: 1em 2em;
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  border-radius: 0.5em;
+  text-decoration: none;
+}

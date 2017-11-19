@@ -1,0 +1,16 @@
+:root {
+  --color-pink: #e4006d;
+  --color-black: #333;
+  --color-white: #fff;
+  --color-gray: #eff3f6;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Noto Sans", sans-serif;
+}

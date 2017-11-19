@@ -4,19 +4,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/outer.css">
+    <link rel="stylesheet" href="./css/container.css">
+    <link rel="stylesheet" href="./css/inner.css">
+    <link rel="stylesheet" href="./css/outline.css">
+    <link rel="stylesheet" href="./css/headline.css">
   </head>
   <body>
-    <header class="Header">
+    <header class="Outer header">
       <div class="Container">
         <facebook-button href="https://webperf.guide" layout="standard" width="80" height="20"></facebook-button>
         <twitter-button type="share" width="80" height="20" user="1000ch" href="https://webperf.guide" text="超速! Webページ速度改善ガイド"></twitter-button>
       </div>
     </header>
     <main>
-      <section class="JumbotronContainer">
+      <section class="Outer jumbotron">
         <div class="Container">
-          <div class="Jumbotron">
+          <div class="Inner">
             <h1>超速! Webページ速度改善ガイド</h1>
             <p>
               <date>2017年11月23日</date>発売<br>
@@ -25,127 +32,142 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="Outer">
         <div class="Container">
-          <h2>使いやすさは「速さ」から始まる</h2>
-          <p>本書では「超速！」と銘を打って、Webページの速度を改善するためのノウハウを紹介します。Webページの速度は、みなさんのビジネスにおけるWebの価値を大きく左右します。
-              Webページを構成する要素としてネットワーク処理、レンダリング処理、スクリプト処理の3つを取り上げ、これらを詳しく説明することで高速化に関する知識を網羅します。各テーマについては、基礎知識の章と、実践的な問題の調査と改善の章の2本立てで解説を進めます。これにより、調査によって個別の問題に分解して把握する力と、それに対する適切な改善を実行する力を身に付けられます。</p>
-          <a href="https://www.amazon.co.jp/dp/477419400X/">書籍を購入する</a>
-        </div>
-      </section>
-      <section>
-        <div class="Container">
-          <h2>目次</h2>
-          <ol>
-            <li>
-              <h3>第1章　Webページの速度</h3>
-              <ol>
-                <li>Webページの速度とは何か</li>
-                <li>Webページの速度の重要性</li>
-                <li>Webフロントエンド高速化のポイント</li>
-                <li>Webフロントエンド高速化の取り組み方</li>
-                <li>Webページの調査に必要なブラウザの開発者ツール</li>
-                <li>Webページのリソース最適化に必要なNode.js</li>
-              </ol>
-            </li>
-            <li>
-              <h3>第2章　ネットワーク処理の基礎知識</h3>
-              <ol>
-                <li>ページロードの速度を左右するネットワーク処理</li>
-                <li>ネットワーク処理の基本</li>
-                <li>ネットワーク処理の調査と計測</li>
-                <li>プロダクトに応じた指標作り</li>
-              </ol>
-            </li>
-            <li>
-              <h3>第3章　ネットワーク処理の調査と改善</h3>
-              <ol>
-                <li>サイズの大きいリソースの調査と改善</li>
-                <li>待機時間が長いリクエストの調査と改善</li>
-                <li>リクエスト数の調査と改善</li>
-                <li>クリティカルレンダリングパスの調査と改善</li>
-                <li>Webフォントに関わるリソースの調査と改善</li>
-              </ol>
-            </li>
-            <li>
-              <h3>第4章　レンダリング処理の基礎知識</h3>
-              <ol>
-                <li>スムーズなUIとスムーズでないUIの違い</li>
-                <li>レンダリング処理の基本</li>
-                <li>レンダリング処理の調査と計測</li>
-              </ol>
-            </li>
-            <li>
-              <h3>第5章　レンダリング処理の調査と改善</h3>
-              <ol>
-                <li>レイアウト算出の調査と改善</li>
-                <li>ペイント処理の調査と改善</li>
-                <li>意図しないCompositingの調査と改善</li>
-                <li>アニメーションの調査と改善</li>
-              </ol>
-            </li>
-            <li>
-              <h3>第6章　スクリプト処理の基礎知識</h3>
-              <ol>
-                <li>あらゆるブラウザ処理に関わるJavaScriptの実行</li>
-                <li>スクリプト処理の基本</li>
-                <li>スクリプト処理の調査と計測</li>
-              </ol>
-            </li>
-            <li>
-              <h3>第7章　スクリプト処理の調査と改善</h3>
-              <ol>
-                <li>重いスクリプト処理の調査と改善</li>
-                <li>メモリリークの調査と改善</li>
-                <li>高頻度で実行されるGCの調査と改善</li>
-                <li>未解放のイベントリスナとタイマーの調査と改善</li>
-              </ol>
-            </li>
-            <li>
-              <h3>第8章　画像の最適化に役立つテクニック</h3>
-              <ol>
-                <li>画像がWebページの速度に及ぼす影響</li>
-                <li>画像の基本</li>
-                <li>主要な画像形式</li>
-                <li>画像の最適化</li>
-                <li>画像リソースの効率的なレスポンシブWeb対応</li>
-              </ol>
-            </li>
-            <li>
-              <h3>第9章　ネットワーク処理の効率化に役立つポイント</h3>
-              <ol>
-                <li>Service Workerによるネットワークリソースの制御</li>
-                <li>Resource Hintsによるリソースの先読み</li>
-              </ol>
-            </li>
-          </ol>
-        </div>
-      </section>
-      <section>
-        <div class="Container">
-          <h2>著者紹介</h2>
-          <div>
-            <h3>佐藤歩（さとうあゆむ）</h3>
-            <p>Webアプリケーション開発屋のあほむです。専門はWebフロントエンドのアーキテクチャ設計とパフォーマンス改善で、最近はWebのパフォーマンスとアクセシビリティの連続性に思いを馳せています。趣味は料理と温泉と二次元。</p>
-          </div>
-          <div>
-            <h3>泉水翔吾（せんすいしょうご）</h3>
-            <p>SIerでのプログラマーを経てWeb業界に転職して以来、Web技術に没頭する日々を送っています。Web標準の動向やアーキテクチャの流行を追いかけつつ、技術啓蒙やOSS活動に励んでいます。</p>
+          <div class="Inner">
+            <h2 class="Headline">概要</h2>
+            <blockquote>使いやすさは「速さ」から始まる</blockquote>
+            <p>本書では「超速！」と銘を打って、Webページの速度を改善するためのノウハウを紹介します。Webページの速度は、みなさんのビジネスにおけるWebの価値を大きく左右します。
+                  Webページを構成する要素としてネットワーク処理、レンダリング処理、スクリプト処理の3つを取り上げ、これらを詳しく説明することで高速化に関する知識を網羅します。各テーマについては、基礎知識の章と、実践的な問題の調査と改善の章の2本立てで解説を進めます。これにより、調査によって個別の問題に分解して把握する力と、それに対する適切な改善を実行する力を身に付けられます。</p>
+            <a class="Button" href="https://www.amazon.co.jp/dp/477419400X/">書籍を購入する</a>
           </div>
         </div>
       </section>
-      <section>
+      <section class="Outer">
         <div class="Container">
-          <h2>本書に寄せたコメント</h2>
+          <div class="Inner">
+            <h2 class="Headline">目次</h2>
+            <ol class="Outline">
+              <li>
+                <h3>第1章　Webページの速度</h3>
+                <ol>
+                  <li>Webページの速度とは何か</li>
+                  <li>Webページの速度の重要性</li>
+                  <li>Webフロントエンド高速化のポイント</li>
+                  <li>Webフロントエンド高速化の取り組み方</li>
+                  <li>Webページの調査に必要なブラウザの開発者ツール</li>
+                  <li>Webページのリソース最適化に必要なNode.js</li>
+                </ol>
+              </li>
+              <li>
+                <h3>第2章　ネットワーク処理の基礎知識</h3>
+                <ol>
+                  <li>ページロードの速度を左右するネットワーク処理</li>
+                  <li>ネットワーク処理の基本</li>
+                  <li>ネットワーク処理の調査と計測</li>
+                  <li>プロダクトに応じた指標作り</li>
+                </ol>
+              </li>
+              <li>
+                <h3>第3章　ネットワーク処理の調査と改善</h3>
+                <ol>
+                  <li>サイズの大きいリソースの調査と改善</li>
+                  <li>待機時間が長いリクエストの調査と改善</li>
+                  <li>リクエスト数の調査と改善</li>
+                  <li>クリティカルレンダリングパスの調査と改善</li>
+                  <li>Webフォントに関わるリソースの調査と改善</li>
+                </ol>
+              </li>
+              <li>
+                <h3>第4章　レンダリング処理の基礎知識</h3>
+                <ol>
+                  <li>スムーズなUIとスムーズでないUIの違い</li>
+                  <li>レンダリング処理の基本</li>
+                  <li>レンダリング処理の調査と計測</li>
+                </ol>
+              </li>
+              <li>
+                <h3>第5章　レンダリング処理の調査と改善</h3>
+                <ol>
+                  <li>レイアウト算出の調査と改善</li>
+                  <li>ペイント処理の調査と改善</li>
+                  <li>意図しないCompositingの調査と改善</li>
+                  <li>アニメーションの調査と改善</li>
+                </ol>
+              </li>
+              <li>
+                <h3>第6章　スクリプト処理の基礎知識</h3>
+                <ol>
+                  <li>あらゆるブラウザ処理に関わるJavaScriptの実行</li>
+                  <li>スクリプト処理の基本</li>
+                  <li>スクリプト処理の調査と計測</li>
+                </ol>
+              </li>
+              <li>
+                <h3>第7章　スクリプト処理の調査と改善</h3>
+                <ol>
+                  <li>重いスクリプト処理の調査と改善</li>
+                  <li>メモリリークの調査と改善</li>
+                  <li>高頻度で実行されるGCの調査と改善</li>
+                  <li>未解放のイベントリスナとタイマーの調査と改善</li>
+                </ol>
+              </li>
+              <li>
+                <h3>第8章　画像の最適化に役立つテクニック</h3>
+                <ol>
+                  <li>画像がWebページの速度に及ぼす影響</li>
+                  <li>画像の基本</li>
+                  <li>主要な画像形式</li>
+                  <li>画像の最適化</li>
+                  <li>画像リソースの効率的なレスポンシブWeb対応</li>
+                </ol>
+              </li>
+              <li>
+                <h3>第9章　ネットワーク処理の効率化に役立つポイント</h3>
+                <ol>
+                  <li>Service Workerによるネットワークリソースの制御</li>
+                  <li>Resource Hintsによるリソースの先読み</li>
+                </ol>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section class="Outer">
+        <div class="Container">
+          <div class="Inner">
+            <h2 class="Headline">著者</h2>
+            <div>
+              <h3>佐藤歩（さとうあゆむ）</h3>
+              <p>Webアプリケーション開発屋のあほむです。専門はWebフロントエンドのアーキテクチャ設計とパフォーマンス改善で、最近はWebのパフォーマンスとアクセシビリティの連続性に思いを馳せています。趣味は料理と温泉と二次元。</p>
+            </div>
+            <div>
+              <h3>泉水翔吾（せんすいしょうご）</h3>
+              <p>SIerでのプログラマーを経てWeb業界に転職して以来、Web技術に没頭する日々を送っています。Web標準の動向やアーキテクチャの流行を追いかけつつ、技術啓蒙やOSS活動に励んでいます。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="Outer">
+        <div class="Container">
+          <div class="Inner">
+            <h2 class="Headline">コメント</h2>
+          </div>
         </div>
       </section>
     </main>
-    <footer class="Footer">
+    <footer class="Outer footer">
       <div class="Container">
         <facebook-button href="https://webperf.guide" layout="standard" width="80" height="20"></facebook-button>
         <twitter-button type="share" width="80" height="20" user="1000ch" href="https://webperf.guide" text="超速! Webページ速度改善ガイド"></twitter-button>
       </div>
     </footer>
-    <script type="module" src="app.js"></script>
+    <script type="module">
+      import TwitterButton from './js/twitter-button.js';
+      import FacebookButton from './js/facebook-button.js';
+
+      customElements.define('twitter-button', TwitterButton);
+      customElements.define('facebook-button', FacebookButton);
+    </script>
   </body>
 </html>

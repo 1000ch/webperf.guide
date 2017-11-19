@@ -1,0 +1,10 @@
+.Headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 240px;
+  height: 2em;
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
