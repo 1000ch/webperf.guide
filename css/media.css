@@ -1,0 +1,20 @@
+.Media {
+  display: flex;
+}
+
+.Media.-margin {
+  margin-bottom: 2em;
+}
+
+.Media__Image {
+  width: 25%;
+}
+
+.Media__Image img {
+  width: 100%;
+}
+
+.Media__Text {
+  width: 75%;
+  padding-left: 2em;
+}
