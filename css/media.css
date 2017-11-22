@@ -7,7 +7,8 @@
 }
 
 .Media__Image {
-  width: 25%;
+  align-self: center;
+  width: 33%;
 }
 
 .Media__Image img {
@@ -15,6 +16,6 @@
 }
 
 .Media__Text {
-  width: 75%;
+  width: 66%;
   padding-left: 2em;
 }
