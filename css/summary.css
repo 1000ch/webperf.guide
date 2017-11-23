@@ -1,0 +1,38 @@
+.Summary::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.Summary img {
+  float: left;
+}
+
+@media (max-width: 480px) {
+  .Summary img {
+    width: 100%;
+    padding-bottom: 1em;
+  }
+}
+
+@media (min-width: 481px) {
+  .Summary img {
+    width: 30%;
+    padding-right: 1em;
+    padding-bottom: 1em;
+  }
+}
+
+.Summary__Quote::before {
+  content: "“";
+  font-family: serif;
+}
+
+.Summary__Quote::after {
+  content: "”";
+  font-family: serif;
+}
+
+.Summary__Info {
+  text-align: center;
+}

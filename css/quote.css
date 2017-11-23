@@ -1,9 +1,0 @@
-.Quote::before {
-  content: "“";
-  font-family: serif;
-}
-
-.Quote::after {
-  content: "”";
-  font-family: serif;
-}
