@@ -1,0 +1,7 @@
+{
+  "name": "webperf.guide",
+  "private": true,
+  "scripts": {
+    "test": "echo webperf.guide"
+  }
+}
