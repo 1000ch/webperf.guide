@@ -1,0 +1,16 @@
+.Profile::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.Profile img {
+  float: left;
+  width: 25%;
+  padding-right: 1em;
+  padding-bottom: 1em;
+}
+
+.Profile.-margin {
+  margin-bottom: 2em;
+}
