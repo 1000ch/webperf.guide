@@ -1,0 +1,21 @@
+{
+  "short_name": "超速本",
+  "name": "超速! Webページ速度改善ガイド",
+  "icons": [
+    {
+      "src": "img/icon-1x.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "img/icon-2x.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "img/icon-4x.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ]
+}
