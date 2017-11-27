@@ -1,4 +1,4 @@
-const CACHE_KEY = 'v1';
+const CACHE_KEY = 'v2';
 const CACHE_FILES = [
   '/',
   'base.css',
@@ -6,7 +6,7 @@ const CACHE_FILES = [
   'container.css',
   'headline.css',
   'inner.css',
-  'media.css',
+  'profile.css',
   'normalize.css',
   'outer.css',
   'outline.css',
