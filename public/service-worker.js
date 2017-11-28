@@ -1,4 +1,4 @@
-const CACHE_KEY = 'v2';
+const CACHE_KEY = '20171128';
 const CACHE_FILES = [
   '/',
   'base.css',
@@ -43,7 +43,6 @@ self.addEventListener('fetch', event => {
     return cache.match(event.request).then(response => {
       return response || fetch(event.request.clone()).then(response => {
         if (!response.ok) {
-          console.error(response.statusText);
           return;
         }
 
