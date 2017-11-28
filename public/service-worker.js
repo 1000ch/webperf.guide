@@ -11,6 +11,7 @@ const CACHE_FILES = [
   'outer.css',
   'outline.css',
   'summary.css',
+  'title.css',
   'cover.png',
   'ahomu.webp',
   'ahomu.png',
