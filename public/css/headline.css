@@ -1,11 +1,11 @@
 .Headline {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: auto;
-  margin-bottom: 2em;
+  justify-content: center;
   width: 240px;
   height: 2em;
-  background-color: var(--color-black);
+  margin: auto;
+  margin-bottom: 2em;
   color: var(--color-white);
+  background-color: var(--color-black);
 }

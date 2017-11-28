@@ -6,11 +6,11 @@
 }
 
 html {
-  font-size: 62.5%;
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 body {
-  font-size: 1.6rem;
   font-family: "Noto Sans", sans-serif;
+  font-size: 1.6rem;
 }
