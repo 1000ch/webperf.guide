@@ -2,6 +2,16 @@
   "name": "webperf.guide",
   "private": true,
   "scripts": {
-    "test": "echo webperf.guide"
+    "test": "npm run stylelint",
+    "stylelint": "stylelint public/css/*.css !public/css/normalize.css"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-fresh"
+  },
+  "devDependencies": {
+    "stylelint": "^8.3.1",
+    "stylelint-config-fresh": "^2.2.0",
+    "stylelint-config-standard": "^18.0.0",
+    "stylelint-order": "^0.7.0"
   }
 }
