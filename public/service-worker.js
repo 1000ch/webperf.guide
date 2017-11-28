@@ -18,6 +18,11 @@ const CACHE_FILES = [
   'ahomu.png',
   '1000ch.webp',
   '1000ch.jpg',
+  'icon-48.png',
+  'icon-96.png',
+  'icon-192.png',
+  'icon-256.png',
+  'icon-512.png',
   'twitter-button.js',
   'facebook-button.js'
 ];

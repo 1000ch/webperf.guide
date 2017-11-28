@@ -1,21 +1,34 @@
 {
   "short_name": "超速本",
   "name": "超速! Webページ速度改善ガイド",
+  "theme_color": "#333333",
+  "display": "minimal-ui",
+  "background_color": "#333333",
   "icons": [
     {
-      "src": "img/icon-1x.png",
+      "src": "img/icon-48.png",
       "type": "image/png",
       "sizes": "48x48"
     },
     {
-      "src": "img/icon-2x.png",
+      "src": "img/icon-96.png",
       "type": "image/png",
       "sizes": "96x96"
     },
     {
-      "src": "img/icon-4x.png",
+      "src": "img/icon-192.png",
       "type": "image/png",
       "sizes": "192x192"
+    },
+    {
+      "src": "img/icon-256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "img/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ]
 }
