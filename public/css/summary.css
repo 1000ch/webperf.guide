@@ -22,17 +22,3 @@
     padding-bottom: 1em;
   }
 }
-
-.Summary__Quote::before {
-  content: "“";
-  font-family: serif;
-}
-
-.Summary__Quote::after {
-  content: "”";
-  font-family: serif;
-}
-
-.Summary__Info {
-  text-align: center;
-}
