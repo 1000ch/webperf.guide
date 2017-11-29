@@ -1,6 +1,6 @@
 .Outer {
   padding: 2vw;
-  background-color: var(--color-gray);
+  background-color: var(--color-lightgray);
 }
 
 .Outer.header {

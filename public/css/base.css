@@ -1,8 +1,9 @@
 :root {
   --color-pink: #e4006d;
   --color-black: #333;
+  --color-gray: #999;
+  --color-lightgray: #eff3f6;
   --color-white: #fff;
-  --color-gray: #eff3f6;
 }
 
 html {
@@ -13,4 +14,5 @@ html {
 body {
   font-family: "Noto Sans", sans-serif;
   font-size: 1.6rem;
+  line-height: 1.3;
 }
