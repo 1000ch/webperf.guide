@@ -24,7 +24,6 @@
     <link rel="stylesheet" href="css/container.css">
     <link rel="stylesheet" href="css/inner.css">
     <link rel="stylesheet" href="css/title.css">
-    <link rel="stylesheet" href="css/share.css">
     <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/outline.css">
     <link rel="stylesheet" href="css/summary.css">
@@ -34,25 +33,24 @@
   <body>
     <header class="Outer header">
       <div class="Container">
-        <h1 class="Title">
-          超速! Webページ速度改善ガイド
-          <small> ── 使いやすさは「速さ」から始まる (WEB+DB PRESS plus)</small>
-        </h1>
-        <div class="Share">
-          <facebook-button
-            layout="standard"
-            width="80"
-            height="20"
-            href="https://webperf.guide">
-          </facebook-button>
-          <twitter-button
-            type="hashtag"
-            width="120"
-            height="20"
-            href="https://webperf.guide"
-            hashtag="超速本"
-            text="超速! Webページ速度改善ガイド ── 使いやすさは「速さ」から始まる (WEB+DB PRESS plus) https://webperf.guide">
-          </twitter-button>
+        <div class="Title">
+          <h1>超速! Webページ速度改善ガイド</h1>
+          <div class="TitleShare">
+            <facebook-button
+              layout="standard"
+              width="80"
+              height="20"
+              href="https://webperf.guide">
+            </facebook-button>
+            <twitter-button
+              type="hashtag"
+              width="120"
+              height="20"
+              href="https://webperf.guide"
+              hashtag="超速本"
+              text="超速! Webページ速度改善ガイド ── 使いやすさは「速さ」から始まる (WEB+DB PRESS plus) https://webperf.guide">
+            </twitter-button>
+          </div>
         </div>
       </div>
     </header>
@@ -62,6 +60,7 @@
           <div class="Inner">
             <div class="Summary">
               <img src="img/cover.png" alt="">
+              <h2 class="Summary__Title">使いやすさは「速さ」から始まる</h2>
               <p>
                 本書では「超速！」と銘を打って、Webページの速度を改善するためのノウハウを紹介します。
                 Webページの速度は、みなさんのビジネスにおけるWebの価値を大きく左右します。
@@ -69,16 +68,16 @@
                 各テーマについては、基礎知識の章と、実践的な問題の調査と改善の章の2本立てで解説を進めます。
                 これにより、調査によって個別の問題に分解して把握する力と、それに対する適切な改善を実行する力を身に付けられます。
               </p>
-              <div style="text-align: center;">
-                <p style="font-size: 1.5em;">
-                  <date>2017年11月23日</date>発売
-                  <br>
-                  <span>本体価格</span>
-                  <strong>2,786円</strong>
-                </p>
-                <a class="Button" href="https://www.amazon.co.jp/dp/477419400X/">
-                  書籍を購入する
-                </a>
+              <div class="SummaryDetail">
+                <div class="SummaryPrice">
+                  <span class="SummaryPrice__Label">本体価格</span>
+                  <strong class="SummaryPrice__Price">2,786<span>円</span></strong>
+                </div>
+                <div class="SummaryBuy">
+                  <a class="Button" href="https://www.amazon.co.jp/dp/477419400X/">
+                    書籍を購入する
+                  </a>
+                </div>
               </div>
             </div>
           </div>

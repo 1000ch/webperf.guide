@@ -1,4 +1,21 @@
 .Title {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Title h1 {
   color: #fff;
+}
+
+.TitleShare {
+  display: flex;
+  justify-content: flex-end;
+  height: 24px;
+}
+
+@media (max-width: 480px) {
+  .Title {
+    flex-direction: column;
+  }
 }

@@ -1,7 +1,8 @@
 .Button {
-  display: inline-block;
+  display: inline-flex;
   padding: 1em 2em;
   text-decoration: none;
   color: var(--color-white);
+  border-radius: 0.25em;
   background-color: var(--color-pink);
 }

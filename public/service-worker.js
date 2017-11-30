@@ -1,4 +1,4 @@
-const CACHE_KEY = '20171129';
+const CACHE_KEY = '20171130';
 const CACHE_FILES = [
   '/',
   'base.css',
@@ -10,7 +10,6 @@ const CACHE_FILES = [
   'outer.css',
   'outline.css',
   'profile.css',
-  'share.css',
   'summary.css',
   'title.css',
   'cover.png',
