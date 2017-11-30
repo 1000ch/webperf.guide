@@ -8,10 +8,12 @@
 
 html {
   box-sizing: border-box;
+  background-color: var(--color-black);
   font-size: 62.5%;
 }
 
 body {
+  color: var(--color-black);
   font-family: "Noto Sans", sans-serif;
   font-size: 1.6rem;
   line-height: 1.4;
