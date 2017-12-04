@@ -1,4 +1,4 @@
-const CACHE_KEY = '20171130';
+const CACHE_KEY = '20171204';
 const CACHE_FILES = [
   '/',
   'base.css',
@@ -20,6 +20,8 @@ const CACHE_FILES = [
   '1000ch.jpg',
   'mizchi.webp',
   'mizchi.jpg',
+  't32k.webp',
+  't32k.jpg',
   'icon-48.png',
   'icon-96.png',
   'icon-192.png',
