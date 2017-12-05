@@ -1,4 +1,4 @@
-const CACHE_KEY = '20171204';
+const CACHE_KEY = '20171205';
 const CACHE_FILES = [
   '/',
   'normalize.css',
