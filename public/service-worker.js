@@ -20,7 +20,9 @@ const CACHE_FILES = [
   'icon-256.png',
   'icon-512.png',
   'twitter-button.js',
-  'facebook-button.js'
+  'facebook-button.js',
+  'NotoSansCJKjp-Regular.otf',
+  'NotoSansCJKjp-Bold.otf'
 ];
 
 self.addEventListener('install', event => {
