@@ -1,0 +1,145 @@
+.Button {
+  display: inline-flex;
+  padding: 1em 2em;
+  text-decoration: none;
+  color: var(--color-white);
+  border-radius: 0.25em;
+  background-color: var(--color-pink);
+}
+
+.Outline {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.Outline ol {
+  padding-left: 2em;
+}
+
+.Summary__Title {
+  margin-bottom: 0;
+}
+
+.Summary::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.Summary img {
+  float: left;
+  box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.2);
+}
+
+.SummaryDetail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.SummaryPrice {
+  display: flex;
+  align-items: center;
+}
+
+.SummaryPrice__Label {
+  margin-right: 1em;
+  padding: 0.2em;
+  border: solid 2px currentColor;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+.SummaryPrice__Price {
+  font-size: 2.5em;
+}
+
+.SummaryPrice__Price span {
+  font-size: 0.8em;
+}
+
+@media (max-width: 480px) {
+  .Summary img {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+
+  .SummaryDetail {
+    flex-direction: column;
+  }
+
+  .SummaryBuy {
+    margin-top: 1em;
+  }
+}
+
+@media (min-width: 481px) {
+  .Summary img {
+    width: 240px;
+    margin-right: 2em;
+    margin-bottom: 1em;
+  }
+}
+
+.Headline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 2em;
+  margin: auto;
+  margin-bottom: 2em;
+  color: var(--color-white);
+  background-color: var(--color-black);
+}
+
+.Profile::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.Profile img {
+  float: left;
+  width: 25%;
+  padding-right: 1em;
+  padding-bottom: 1em;
+}
+
+.Profile.-margin {
+  margin-bottom: 2em;
+}
+
+.Comment {
+  display: flex;
+  align-items: center;
+  margin: 2em 0;
+}
+
+.Comment__Avatar {
+  padding-right: 2em;
+  text-align: center;
+}
+
+.Comment__Avatar img {
+  width: 4em;
+}
+
+.Comment__Quote blockquote::before {
+  content: "“";
+}
+
+.Comment__Quote blockquote::after {
+  content: "”";
+}
+
+.Comment__Quote blockquote {
+  margin: 0;
+  padding: 0.4em;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.Comment__QuoteOrigin {
+  font-size: 0.8em;
+}
