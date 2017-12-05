@@ -14,7 +14,23 @@ html {
 
 body {
   color: var(--color-black);
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Noto Sans CJK JP', sans-serif;
   font-size: 1.6rem;
   line-height: 1.4;
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK JP';
+  font-weight: normal;
+  src:
+    local('Noto Sans CJK JP'),
+    url('/font/NotoSansCJKjp-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK JP';
+  font-weight: bold;
+  src:
+    local('Noto Sans CJK JP'),
+    url('/font/NotoSansCJKjp-Bold.otf') format('opentype');
 }
