@@ -1,5 +1,12 @@
 {
   "hosting": {
-    "public": "public"
+    "public": "public",
+    "headers": [{
+      "source": "**/*.@(otf|ttf|woff|woff2)",
+      "headers": [{
+        "key": "Cache-Control",
+        "value": "immutable"
+      }]
+    }]
   }
 }
