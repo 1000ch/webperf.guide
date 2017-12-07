@@ -113,16 +113,24 @@
 .Comment {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 2em 0;
 }
 
-.Comment__Avatar {
+.Comment__Person {
   padding-right: 2em;
+}
+
+.Comment__Avatar {
   text-align: center;
 }
 
 .Comment__Avatar img {
   width: 4em;
+}
+
+.Comment__Name {
+  text-align: center;
 }
 
 .Comment__Quote blockquote::before {
