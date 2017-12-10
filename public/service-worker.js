@@ -38,18 +38,21 @@ self.addEventListener('activate', event => {
 });
 
 self.addEventListener('fetch', event => {
-  if (!CACHE_FILES.some(file => event.request.url.includes(file))) {
+  const { request } = event;
+  const url = new URL(request.url);
+
+  if (url.hostname !== 'webperf.guide') {
+    return;
+  }
+
+  if (!CACHE_FILES.some(file => url.pathname.includes(file))) {
     return;
   }
 
   const fetching = caches.open(CACHE_KEY).then(cache => {
-    return cache.match(event.request).then(response => {
-      return response || fetch(event.request.clone()).then(response => {
-        if (!response.ok) {
-          return;
-        }
-
-        cache.put(event.request, response.clone());
+    return cache.match(request).then(response => {
+      return response || fetch(request.clone()).then(response => {
+        cache.put(request, response.clone());
         return response;
       });
     });
