@@ -1,4 +1,4 @@
-const CACHE_KEY = '20171205';
+const CACHE_KEY = '20171216';
 const CACHE_FILES = [
   '/',
   'normalize.css',
@@ -30,11 +30,13 @@ self.addEventListener('install', event => {
 });
 
 self.addEventListener('activate', event => {
-  const deletion = caches.keys()
-    .then(keys => keys.filter(key => key !== CACHE_KEY))
-    .then(keys => Promise.all(keys.map(key => caches.delete(key))));
+  event.waitUntil((async () => {
+    const keys = await caches.keys();
+    const deleteKeys = keys.filter(key => key !== CACHE_KEY);
+    await Promise.all(deleteKeys.map(key => caches.delete(key)));
 
-  event.waitUntil(deletion.then(() => self.clients.claim()));
+    await self.clients.claim();
+  })());
 });
 
 self.addEventListener('fetch', event => {
@@ -49,14 +51,20 @@ self.addEventListener('fetch', event => {
     return;
   }
 
-  const fetching = caches.open(CACHE_KEY).then(cache => {
-    return cache.match(request).then(response => {
-      return response || fetch(request.clone()).then(response => {
-        cache.put(request, response.clone());
-        return response;
-      });
-    });
-  });
+  event.respondWith((async () => {
+    const cache = await caches.open(CACHE_KEY);
+    const data = await cache.match(request);
+    if (data) {
+      return data;
+    }
 
-  event.respondWith(fetching);
+    const response = await fetch(request.clone());
+    if (!response.ok) {
+      return;
+    }
+
+    await cache.put(request, response.clone());
+
+    return response;
+  })());
 });
