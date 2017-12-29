@@ -1,4 +1,4 @@
-const CACHE_KEY = '20171216';
+const CACHE_KEY = '20171229';
 const CACHE_FILES = [
   '/',
   'normalize.css',
@@ -14,6 +14,8 @@ const CACHE_FILES = [
   'mizchi.jpg',
   't32k.webp',
   't32k.jpg',
+  'yosuke_furukawa.webp',
+  'yosuke_furukawa.jpg',
   'icon-48.png',
   'icon-96.png',
   'icon-192.png',
