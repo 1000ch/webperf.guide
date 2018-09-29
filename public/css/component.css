@@ -118,7 +118,9 @@
 }
 
 .Comment__Person {
+  width: 100px;
   padding-right: 2em;
+  overflow-wrap: break-word;
 }
 
 .Comment__Avatar {
