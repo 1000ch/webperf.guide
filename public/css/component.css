@@ -1,6 +1,10 @@
 .Button {
   display: inline-flex;
-  padding: 1em 2em;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 60px;
+  margin: 0.5em 1em;
   text-decoration: none;
   color: var(--color-white);
   border-radius: 0.25em;
@@ -16,33 +20,33 @@
   padding-left: 2em;
 }
 
-.Summary__Title {
-  margin-bottom: 0;
-}
-
 .Summary::after {
   display: block;
   clear: both;
   content: "";
 }
 
-.Summary img {
+.Summary__Image {
   float: left;
   box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.2);
 }
 
-.SummaryDetail {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.Subtitle {
+  margin-bottom: 0;
 }
 
-.SummaryPrice {
-  display: flex;
-  align-items: center;
+.Description {
+  margin: 1em 0;
 }
 
-.SummaryPrice__Label {
+.Price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em 0;
+}
+
+.Price__Label {
   margin-right: 1em;
   padding: 0.2em;
   border: solid 2px currentColor;
@@ -50,31 +54,38 @@
   font-weight: bold;
 }
 
-.SummaryPrice__Price {
+.Price__Price {
   font-size: 2.5em;
 }
 
-.SummaryPrice__Price span {
+.Price__Price span {
   font-size: 0.8em;
 }
 
+.Buy {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.Buy__Button {
+  flex-basis: 1em;
+}
+
 @media (max-width: 480px) {
-  .Summary img {
+  .Summary__Image {
     width: 100%;
     margin-bottom: 2em;
   }
 
-  .SummaryDetail {
+  .Summary {
     flex-direction: column;
-  }
-
-  .SummaryBuy {
-    margin-top: 1em;
   }
 }
 
 @media (min-width: 481px) {
-  .Summary img {
+  .Summary__Image {
     width: 240px;
     margin-right: 2em;
     margin-bottom: 1em;
