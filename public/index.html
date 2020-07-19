@@ -22,6 +22,19 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/component.css">
+    <script type="module">
+      import TwitterButton from 'https://unpkg.com/social-button/dist/twitter-button.js';
+      import FacebookButton from 'https://unpkg.com/social-button/dist/facebook-button.js';
+
+      customElements.define('twitter-button', TwitterButton);
+      customElements.define('facebook-button', FacebookButton);
+    </script>
+    <script defer>
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker.register('service-worker.js');
+      }
+    </script>
+    <script defer src="https://platform.twitter.com/widgets.js"></script>
   </head>
   <body>
     <header class="Outer header">
@@ -316,25 +329,5 @@
         </div>
       </div>
     </footer>
-    <script type="module">
-      import TwitterButton from './js/twitter-button.js';
-      import FacebookButton from './js/facebook-button.js';
-
-      customElements.define('twitter-button', TwitterButton);
-      customElements.define('facebook-button', FacebookButton);
-    </script>
-    <script>
-      if (navigator.serviceWorker) {
-        navigator.serviceWorker.register('service-worker.js');
-      }
-    </script>
-    <script async src="https://platform.twitter.com/widgets.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49530352-9"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-49530352-9');
-    </script>
   </body>
 </html>
