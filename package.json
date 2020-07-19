@@ -15,7 +15,6 @@
     "stylelint": "^9.6.0",
     "stylelint-config-mercari": "^0.1.1",
     "stylelint-config-standard": "^18.2.0",
-    "stylelint-order": "^0.8.1",
-    "terser": "^3.9.3"
+    "stylelint-order": "^0.8.1"
   }
 }
