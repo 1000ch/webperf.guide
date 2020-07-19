@@ -10,11 +10,9 @@
     "extends": "stylelint-config-mercari"
   },
   "devDependencies": {
-    "csso": "^3.4.0",
-    "globby": "^8.0.1",
-    "stylelint": "^9.6.0",
-    "stylelint-config-mercari": "^0.1.1",
-    "stylelint-config-standard": "^18.2.0",
-    "stylelint-order": "^0.8.1"
+    "csso": "^4.0.3",
+    "globby": "^11.0.1",
+    "stylelint": "^13.6.1",
+    "stylelint-config-mercari": "^0.10.0"
   }
 }
